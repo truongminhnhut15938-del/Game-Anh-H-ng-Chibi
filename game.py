@@ -46,17 +46,19 @@ def load_image(path, default_color, size):
 # Bạn cần đảm bảo các file ảnh đã có trong thư mục 'assets/' trên GitHub
 BG_IMG = load_image('assets/background.png', (150, 200, 150), (SCREEN_WIDTH, SCREEN_HEIGHT))
 PLAYER_IMG = load_image('assets/player_idle.png', (50, 100, 230), (100, 160)) # Scale nhân vật to hơn 1 chút
-ENEMY_TIGER_IMG = load_image('assets/ranhomang.png', (200, 150, 50), (160, 160))
-ENEMY_LION_IMG = load_image('assets/khunglongtrex.png', (150, 150, 150), (160, 160))
-ENEMY_DINO_IMG = load_image('assets/voimamut.png', (100, 150, 100), (160, 160))
-ENEMY_DINO_IMG = load_image('assets/thuankien.png', (100, 150, 100), (160, 160))
-ENEMY_DINO_IMG = load_image('assets/horangkiem.png', (100, 150, 100), (160, 160))
+ENEMY_KINGCOBRA_IMG = load_image('assets/ranhomang.png', (200, 150, 50), (160, 160))
+ENEMY_DINO_IMG = load_image('assets/khunglongtrex.png', (150, 150, 150), (160, 160))
+ENEMY_MAMUT_IMG = load_image('assets/voimamut.png', (100, 150, 100), (160, 160))
+ENEMY_THUANKIEN_IMG = load_image('assets/thuankien.png', (100, 150, 100), (160, 160))
+ENEMY_SMILODON_IMG = load_image('assets/horangkiem.png', (100, 150, 100), (160, 160))
 
 # Gán hình ảnh cho các biến quái
 enemy_images = {
-    "Ho Sach Be": ENEMY_TIGER_IMG,
-    "Su Tu Sach Be": ENEMY_LION_IMG,
+    "Ho Sach Be": ENEMY_SMILODON_IMG,
+    "Ran Ho Mang Sach Be": ENEMY_KINHCOBRA_IMG,
     "Khung Long Sach Be": ENEMY_DINO_IMG
+    "Thu An Kien Sach Be": ENEMY_THUANKIEN_IMG
+    "Voi Ma Mut Sach Be": ENEMY_MAMUT_IMG
 }
 
 # --- Danh sách Vũ Khí ---
@@ -94,9 +96,11 @@ clock = pygame.time.Clock()
 def reset_enemy():
     global enemy_hp, enemy_max_hp, enemy_name, enemy_y, enemy_fly_y, current_enemy_img
     enemies_data = [
-        ("Ho Sach Be", 100, ENEMY_TIGER_IMG), 
-        ("Su Tu Sach Be", 130, ENEMY_LION_IMG), 
-        ("Khung Long Sach Be", 160, ENEMY_DINO_IMG)
+        ("Ho Sach Be", 100, ENEMY_SMILODON_IMG), 
+        ("Ran Ho Mang Sach Be", 130, ENEMY_KINGCOBRA_IMG), 
+        ("Khung Long Sach Be", 160, ENEMY_DINO_IMG),
+        ("Thu An Kien Sach Be",130, ENEMY_THUANKIEN_IMG),
+        ("Voi Ma Mut Sach Be",180, ENEMY_MAMUT_IMG)
     ]
     chosen = random.choice(enemies_data)
     enemy_name = chosen[0]
