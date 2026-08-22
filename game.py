@@ -46,9 +46,11 @@ def load_image(path, default_color, size):
 # Bạn cần đảm bảo các file ảnh đã có trong thư mục 'assets/' trên GitHub
 BG_IMG = load_image('assets/background.png', (150, 200, 150), (SCREEN_WIDTH, SCREEN_HEIGHT))
 PLAYER_IMG = load_image('assets/player_idle.png', (50, 100, 230), (100, 160)) # Scale nhân vật to hơn 1 chút
-ENEMY_TIGER_IMG = load_image('assets/enemy_tiger.png', (200, 150, 50), (160, 160))
-ENEMY_LION_IMG = load_image('assets/enemy_lion.png', (150, 150, 150), (160, 160))
-ENEMY_DINO_IMG = load_image('assets/enemy_dino.png', (100, 150, 100), (160, 160))
+ENEMY_TIGER_IMG = load_image('assets/ranhomang.png', (200, 150, 50), (160, 160))
+ENEMY_LION_IMG = load_image('assets/khunglongtrex.png', (150, 150, 150), (160, 160))
+ENEMY_DINO_IMG = load_image('assets/voimamut.png', (100, 150, 100), (160, 160))
+ENEMY_DINO_IMG = load_image('assets/thuankien.png', (100, 150, 100), (160, 160))
+ENEMY_DINO_IMG = load_image('assets/voimamut.png', (100, 150, 100), (160, 160))
 
 # Gán hình ảnh cho các biến quái
 enemy_images = {
