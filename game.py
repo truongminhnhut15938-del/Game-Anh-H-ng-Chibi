@@ -50,7 +50,7 @@ ENEMY_TIGER_IMG = load_image('assets/ranhomang.png', (200, 150, 50), (160, 160))
 ENEMY_LION_IMG = load_image('assets/khunglongtrex.png', (150, 150, 150), (160, 160))
 ENEMY_DINO_IMG = load_image('assets/voimamut.png', (100, 150, 100), (160, 160))
 ENEMY_DINO_IMG = load_image('assets/thuankien.png', (100, 150, 100), (160, 160))
-ENEMY_DINO_IMG = load_image('assets/voimamut.png', (100, 150, 100), (160, 160))
+ENEMY_DINO_IMG = load_image('assets/horangkiem.png', (100, 150, 100), (160, 160))
 
 # Gán hình ảnh cho các biến quái
 enemy_images = {
